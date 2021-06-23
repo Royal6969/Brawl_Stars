@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS Proyect/Home.css">
+
+        <title>Home</title>
+    </head>
+
+    <body>
+
+        <!-- ------------------------- Preloader ----------------------------- -->
+
+        <div class="preloader">
+            <div class="counter">0</div>
+            <div id="fillCounterTopLeft"></div>
+            <div id="fillCounterTopRight"></div>
+            <div id="fillCounterBottomLeft"></div>
+            <div id="fillCounterBottomRight"></div>
+        </div>
+
+        <!----------------------- Scroll To Top Button --------------------------->
+
+        <div class="scrollTop" onclick="scrollToTop();"></div>
+
+        <!----------------------- Scroll Bar ------------------------------------->
+
+        <div id="progressBar"></div>
+        <div id="scrollPath"></div>
+
+        <!-- ------------------------- Header Video --------------------------- -->
+
+        <header class="v-header container">
+            
+            <div class="fullscreen-video-wrap">
+               <!-- <video src="video/Brawl-Stars-GooglePlay.mov" autoplay="true" loop="true"></video>  porque no me pilla el autoplay y el loop??  -->
+                <!-- <video id="miVideo" width="1920" height="1080" controls> -->
+                <video id="miVideo" autoplay muted loop>
+                    <source src="video/Brawl-Stars-GooglePlay.mp4" type="video/mp4">
+                </video>
+
+        <div class="header-overlay">
+            
+            <div class="header-content">
+                <h1>Hola BrawlFan</h1>
+                <p>Mi nombre es Sergio, y esta es mi primera página web!<br>Actualmente estoy estudiando el CFGS de Desarrollo de Aplicaciones Multiplataforma<br>y he hecho esta web como trabajo para la asignatura de Lenguaje de Marca</p>
+                <br><br><br><br><br>
+                <a href="Brawlers.html" class="btn">Vamos allá !</a>
+            </div>
+        </div>
+            
+        </header>
+            
+        <section class="section">
+            <div class="container">
+                <h1>Brawlers</h1>
+                <p>En esta primera sección encontrarás el catálogo de todos los brawlers del juego, agrupados por calidad<br>y además podrás ver las skins de cada brawler pulsando sobre su foto<br>contando también con un botón que te llevará a la web <i>Brawlify</i> para ver más información detallada de cada uno ...<br>ideal para elegir bien al brawler más adecuado y asegurar la victoria!</p>
+                <div class="container1">
+                    <div class="btn1"><a href="Brawlers.html">Brawlers</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-b">
+            <div class="container">
+                <h1>Mapas</h1>
+                <p>Sección equivalente a la de antes pero esta vez con los mapas del juego, agrupados por modos<br>e igualmente si pulsas sobre la foto de un mapa, podrás ver éste en un tamaño más grande,<br> y pulsar el botón para ver más información ...<br>¿no dicen que se lucha mejor sobre un terreno que ya conoces de antemano?</p>
+                <div class="container1">
+                    <div class="btn1"><a href="Mapas.html">Mapas</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1>Changes</h1>
+                <p>Esta sección hace la función de historial de cambios.<br>Todos sabemos que con bastante frecuencia,<br> es usual que Supercell modifique las características de ciertos brawlerse en función de cuánta gente los usa,<br>e incluso llegan a modificar reglas en los modos de juego, o simplemente van añadiendo nuevo contenido.<br>En cuanto desconectas un mes de las noticias,<br> se hace algo tedioso recordar información de internet para recordar<br> y repasar en detalle los cambios que se han ido produciendo.<br>Esta sección viene a dar respuesta a esa necesidad de recordar, poniendo en primera plana los cambios y actualizaciones recientes más importantes, gracias a la web de <i>blog.brawlstars</i>!</b></p>
+                <div class="container1">
+                    <div class="btn1"><a href="Changes.html">Changes</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-b">
+            <div class="container">
+                <h1>News</h1>
+                <p>Por supuesto, si había un historial de cambios, tenía que estar su correspondiente sección de noticias.<br>Mediante otro diseño, he recopilado las noticias más interesantes del momento sobre todo lo que rodea a BrawlStars<br>Muchísimas cuiosidades y cosas que quizás hayas dejado pasar te esperan en esta sección,<br>siempre de la mano y con el certificado de noticia de calidad de la web de <i>esports.eldesmarque</i></p>
+                <div class="container1">
+                    <div class="btn1"><a href="News.html">News</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1>Stats</h1>
+                <p>Esta es la sección común a todas las otras webs de BrawlStars<br>donde si escribes tu ID de jugador, podrás ver estadísticas muy relevantes de tu perfil<br>como tus avances semanales, porcentaje de victoria, gráficas de tus progresos, etc, y todo bajo el motor de confianza de <i>PixelCrux</i>.</p>
+                <div class="container1">
+                    <div class="btn1"><a href="Stats.html">Stats</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-b">
+            <div class="container">
+                <h1>MOD</h1>
+                <p>Seguro que habías oído hablar o has visto en YT a gente con skins muy raras o con supers infinitas, y todo eso...<br>eso es porque esas personas tienen una aplicación paralela a la oficial de brawl Stars,<br> donde pueden hacer cosas que la versión oficial no permite...<br>Pues aquí te traigo una sección acerca de este MOD<br>junto al enlace para ir a la web oficial del mismo para descargar la aplicación e instalarla.<br></p>
+                <div class="container1">
+                    <div class="btn1"><a href="MOD.html">MOD</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1>Shop</h1>
+                <p>Esta sección como bien indica su nombre, hace de tienda para distribuir productos muy exclusivos y raros de BrawlStars<br>Podrás encontrar desde simples llaveros y despertadores, hasta cojines y edredones nórdicos!<br>Echa un buen vistazo porque seguro que te sorprenderá hasta donde llega el merchandising del juego...</p>
+                <div class="container1">
+                    <div class="btn1"><a href="Shop.html">Shop</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-b">
+            <div class="container">
+                <h1>Login</h1>
+                <p>Descubre por ti mismo la sección secreta que se esconde detrás del inicio de sesión...<br>Dicen que el administrador Royal se pasa por aquí a escribir algunas cosas y que tiene muy buen gusto musical...<br></p>
+                <div class="container1">
+                    <div class="btn1"><a href="UserAccount.html">Login</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------- FOOTER  -------------->
+
+        <div class="footer">
+            <div class="container2">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Download for Android & IOS mobile phone</p>
+                        <div class="app-logo">
+                            <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=ES" target="blank"><img src="images/Shop/Logo_GooglePlay.png" alt=""></a>
+                            <a href="https://apps.apple.com/es/app/brawl-stars/id1229016807" target="blank"><img src="images/Shop/Logo_AppStore.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/Shop/Logo_CocaCola.png" alt="">
+                        <p>Este contenido no está afiliado, respaldado, patrocinado o aprobado específicamente por Supercell, y Supercell no es responsable de ello.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Usuful links</h3>
+                        <ul>
+                            <li><a href="ContactForm.html">Contact Us</a></li>
+                            <li>Blog post</li>
+                            <li>Return policy</li>
+                            <li>Join affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://es-es.facebook.com/brawlstars" target="blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/brawlstars/?hl=es" target="blank">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw" target="blank">YouTube</a></li>
+                            <li><a href="https://twitter.com/BrawlStarsES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Sergio Díaz Campos</p>
+            </div>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- ------------------------- Preloader ----------------------- -->
+
+    <script type="text/javascript">
+        function counter(){
+            var count = setInterval(function(){
+                var c = parseInt($('.counter').text());
+                $('.counter').text((++c).toString());
+
+                document.getElementById('fillCounterTopLeft').style.width = +c/2+'%';
+                document.getElementById('fillCounterTopRight').style.height = +c/2+'%';
+                document.getElementById('fillCounterBottomLeft').style.height = +c/2+'%';
+                document.getElementById('fillCounterBottomRight').style.width = +c/2+'%';
+
+                if(c == 100){
+                    clearInterval(count);
+                    $('.counter').addClass('hide')
+                    $('.preloader').addClass('active')
+                }
+            }, 30)
+        }
+        counter();
+    </script>
+
+    <!-- ------------------------ Header Video --------------------- -->
+
+    <script>
+        miVideo = document.getElementById('miVideo');
+        miVideo.autoplay = true;
+        miVideo.loop = true;
+        miVideo.load();
+    </script>
+
+    <!---------------------- Scroll To Top Button ------------------------>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){ //para definir la altura a la que quiero que aparezca el botón
+            var scroll = document.querySelector('.scrollTop');
+            scroll.classList.toggle("active", window.scrollY > 500)
+        });
+
+        function scrollToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <!-- -------------------- Scroll Bar ---------------------------------->
+
+    <script type="text/javascript">
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+    </body>
+
+</html>

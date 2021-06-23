@@ -1,0 +1,881 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #24252A; */
+    /* transition: 0.5s; */
+}
+
+body{
+    /* color: #000; */
+    background-image: url('../images/Backgrounds/Background-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    cursor: url('../images/Extras/cursor/BrawlStars.cur'), auto;
+    overflow-x: hidden; /* para que cuando se ponga el cursor a la derecha, no se empiece a crear espacio por el js del anillo de letras */
+}
+
+body.night{
+    background: #00151f;
+    transition: 0.5s;
+}
+/* estos 3 siguientes del body.night es por si pusiera un background #fff, que se cambiaran ciertas cosas de blanco a negro y viceversa */
+
+body.night .cursor1 .text1, 
+body.night .loader span{
+    color: #fff;
+}
+
+body.night .container3 a span{
+    color: #fff;
+}
+
+body.night .gallery-block.cards-gallery .card-body{
+    background: #00151f;
+    color: #fff;
+    border: 1px solid #fff;
+} 
+
+body.night .gallery-block.cards-gallery .lightbox{
+    border: 1px solid #fff;
+} 
+
+a{
+    cursor: url('../images/Extras/cursor/BrawlStarsTaraLink.cur'), auto;
+}
+
+/* --------------- Day/Night Toggle Button ------------------------ */
+
+.toggle{
+    position: absolute;
+    top: 55px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 25px; /* Ajustar */
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggle.active{
+    background: #00151f;
+    border: 2px solid #fff;
+}
+
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 1.5px; /* Ajustar */
+    left: 2.5px; /* Ajustar */
+    width: 18px;
+    height: 18px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before{
+    left: 20px;
+    background: #fff;
+}
+
+/* --------------- AnimatedCircleTextEffect-Cursor ---------------- */
+/* el problema que tiene esto, esque aunque esconda su section, o lo implemente en todo el body, si se pone el curso hacia la derecha, el width de la página empieza a extenderse... */
+
+.cursor1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    /* background: #111;  */
+    /* background: #fff; */
+    /* overflow: hidden; */
+    
+}
+
+.cursor1 .text1{
+    position: absolute;
+    color: #000;
+    /* color: #fff; */
+    font-size: 1.5em;
+    user-select: none;
+    pointer-events: none;
+    animation: animate1 7.5s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);  /* Para hacer que gire hacia la izquierda, vale con poner en negativo este 360 o poner 360 arriba en el 0% */
+    
+    }
+}
+
+.cursor1 .text1 span{
+    position: absolute;
+    top: -100px;
+    text-transform: uppercase;
+    display: inline-block;
+    transform-origin: 0 90px;  /* para el diámetro del círculo */   
+}
+
+/* ------------------- Scroll To Top Button ------------------ */
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff url('../images/Extras/up.png');
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; /* para la velocidad con que termina de aparecer por completo el botón (velicidad de fade) */
+}
+
+.scrollTop.active{
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+}
+
+/* ------------------ Scroll Bar ---------------- */
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progessBar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progessBar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+/* ------------------ NavBAr -------------------- */
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* color: #edf0f1; */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    /* background-image: url('../images/Backgrounds/Background-1.jpg'); */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+header img{
+    width: 45px; 
+    height: 67px; 
+}
+
+.NavLinks{
+    padding-top: 18px;
+    list-style: none;
+    width: 100%;  /*OJO*/
+}
+
+.NavLinks li{
+    display: inline-block;
+    padding: 0px 10px;
+    margin-left: 15px; /* */
+}
+
+.NavLinks li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding-left: 14%;
+}
+
+.NavLinks li a:hover{
+    color: #0088a9;
+}
+
+/* button{ 
+    padding: 9px 25px;
+    color: white;
+    background-color: rgb(255, 152, 34);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(7, 201, 0, 0.8);
+}*/
+
+/* ---------------- Botones chulos del navbar ----------- */
+
+.btn1{
+    width: 130%;
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    /* padding: 8px 30px; */
+    /* margin: 30px 0; */
+    border-radius: 15px;
+    transition: background 0.5s;
+}
+
+.btn1:hover{
+    background: #563434;
+}
+
+/* ---------------- Boton GUAI LOGIN navbar ------------- */
+
+.container1{
+    width: 20%;
+    /* padding-right: 100%; */
+    /* padding-left: 500px;   */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.container1 .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+}
+
+.container1 .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+.container1 .btn:hover a{
+    letter-spacing: 3px;
+}
+
+.container1 .btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), 
+    transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.container1 .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+
+.container1 .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.container1 .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.container1 .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.container1 .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.container1 .btn:nth-child(1)::before, 
+.container1 .btn:nth-child(1)::after{
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71,
+    0 0 15px #ff1f71,
+    0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+
+.container1 .btn:nth-child(2)::before, 
+.container1 .btn:nth-child(2)::after{
+    background: #2bd2ff;
+    box-shadow: 0 0 5px #2bd2ff,
+    0 0 15px #2bd2ff,
+    0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff;
+}
+
+.container1 .btn:nth-child(3)::before, 
+.container1 .btn:nth-child(3)::after{
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+/* -- --------------------- Audio Buttom Play & Pause ---------------- */
+
+
+.playPauseBTN-1{
+    margin-left: 6%;
+	padding: 5px 15px;
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	background: linear-gradient(to right bottom,#273c75,#079992);
+	color: #fff;
+	border-radius: 5px;
+	border:0px;
+    min-width: 120px;
+	height: 50px;
+}
+
+.playPauseBTN-2{
+    /* margin-left: 5%; */
+	padding: 5px 15px;
+	font-size: 22px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	background: linear-gradient(to right bottom,#273c75,#079992);
+	color: #fff;
+	border-radius: 5px;
+	border:0px;
+    min-width: 120px;
+	height: 50px;
+}
+
+/* ------------------ Pop Up info ------------------- */
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* se oculta y se activa con el js */
+    z-index: 99;
+}
+
+.contentBox{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contentBox .imgBx{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox .imgBx::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: #e7ffe0;
+    border-radius: 50%;
+}
+
+.contentBox .imgBx img{
+    position: relative;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.contentBox .content{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox .content h3{
+    margin-top: 30px;
+    color: #333;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.contentBox .content h2{
+    font-size: 4em;
+    color: #ff4d54;
+    line-height: 1em;
+}
+
+.contentBox .content h2 span{
+    color: #333;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+.contentBox .content p{
+    font-weight: 300;
+}
+
+.contentBox .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4d54;
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url('../images/Backgrounds/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* now, make it responsive */
+
+@media (max-width : 767px){
+    .contentBox{
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+    }
+    .contentBox .imgBx{
+        height: 200px;
+        transform: translateY(-50px);
+    }
+    .contentBox .imgBx::before{
+        background: #fff;
+    }
+    .contentBox .content{
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+    .close{
+        top: -50px;
+        right: -10px;
+        background: #fff url('../image/cancel.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+    }
+}
+
+/* -------------------- Gallery Block ------------------ */
+
+.gallery-block{padding-bottom: 60px; padding-top: 60px;}
+.gallery-block .heading{margin-bottom: 50px; text-align: center;}
+
+.gallery-block .heading h2{font-weight: bold; font-size: 1.4rem; text-transform: uppercase;}
+
+.gallery-block.cards-gallery h6{font-size: 17px; font-weight: bold;}
+
+.gallery-block.cards-gallery .card{transition: 0.4s easy;}
+.gallery-block.cards-gallery .card img{box-shadow: 0px 2px 10px rgba(0,0,0,0.15);}
+/* .gallery-block.cards-gallery .card-body{text-align: center; background: #00151f; color: #fff;} */
+.gallery-block.cards-gallery .card-body{text-align: center; background: #fff; color: #000;}
+.gallery-block.cards-gallery .card-body p{font-size: 15px;}
+.gallery-block.cards-gallery a{color: #212529; }
+.gallery-block.cards-gallery a:hover{text-decoration: none;}
+.gallery-block.cards-gallery  .card{
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+@media (min-width: 576px){
+    .gallery-block .transform-on-hover:hover{
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.15) !important;
+    }
+}
+/* HECHO CON BOOTSTRAP v4.1 */
+
+/* --------------- BOTÓN GUAI DEL BRAWLER -------------- */
+
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.container3 a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #0f0;
+    /* margin: 40px; */
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.container3 a:hover{
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #0f0,
+                0 0 20px #0f0,
+                0 0 40px #0f0,
+                0 0 80px #0f0,
+                0 0 160px #0f0;
+}
+
+.container3 a span{
+    position: relative;
+    z-index: 100;
+    /* color: #fff; */
+    color: #000;
+}
+
+.container3 a:nth-child(2){
+    filter: hue-rotate(80deg);
+}
+
+.container3 a::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: 5px -8px 0 #0f0,
+                5px 8px 0 #0f0;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.container3 a:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0px 0 #0f0,
+                5px 0px 0 #0f0;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.container3 a::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: -5px -8px 0 #0f0,
+                -5px 8px 0 #0f0;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.container3 a:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0px 0 #0f0,
+                -5px 0px 0 #0f0;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+/* -------------- Animation Title Effect - 1 ----------------- */
+.divTitle{
+    margin-top: -110px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2{
+    position: relative;
+    font-size: 3vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+
+.h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate2 6s linear infinite;
+}
+
+@keyframes animate2{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+/* -------------- Animation Title Effect - 2 ----------------- */
+.loader{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.loader span{
+    position: relative;
+    font-size: 2em;
+    color: #000;
+    /* color: #fff; */
+    display: inline-block;
+    text-transform: uppercase;
+    animation: animate3 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    animation-play-state: running; /* si esto lo pongo en paused ... con el otro en running se haría un efecto hover */
+}
+
+/* .loader:hover span{
+    animation-play-state: running;
+} */
+
+@keyframes animate3{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-50px);
+    }
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.container2{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 25px;
+}
+
+.footer{
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #fff;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a{
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+

@@ -1,0 +1,43 @@
+.animation-wrapper {
+  margin-right: 20%;
+  margin-top: 17.5%;
+  margin-bottom: 17.5%;
+}
+
+/** Layered Animation **/
+
+.layered-animations {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.layered-animations .shape {
+  position: absolute;
+  overflow: visible;
+  width: 150px;
+  height: 150px;
+  stroke: transparent;
+  stroke-width: 1px;
+  fill: url(#shapesGradient);
+}
+
+@media (min-width: 740px) {
+  .layered-animations .shape {
+    stroke-width: .5px;
+  }
+}
+
+.layered-animations .small.shape {
+  width: 80px;
+  height: 80px;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.layered-animations .x-small.shape {
+  width: 35px;
+  height: 35px;
+  stroke: currentColor;
+  fill: currentColor;
+}

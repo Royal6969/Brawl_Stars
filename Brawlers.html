@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="CSS Proyect/bootstrap_4.1.min.css"> <!-- Tiene que ser esta librería local porque con el cdn no funciona -->
+    <link rel="stylesheet" href="CSS Proyect/Brawlers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+
+    <link rel="shortcut icon" href="images/Extras/BrawlStars-Icon_3.png" type="image/x-icon">
+    
+    <title>Brawlers</title>
+
+  </head>
+
+  <body>
+    
+    <!---------------------- AnimatedCircleTextEffect-Cursor ------------------>
+
+    <section class="cursor1">
+        <h2 class="text1">Pulsa-un-brawler--</h2>
+    </section> 
+
+    <!----------------------- Scroll To Top Button --------------------------->
+
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+
+    <!----------------------- Scroll Bar ------------------------------------->
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+    <!-- ---------------------- NavBar ---------------------- -->
+
+    <header>
+        <a href="index.html"><img class="logo" src="images/NavBar/Logo_Leon.png" alt="logo"></a>
+        <nav>
+            <ul class="NavLinks">
+                <li><a class="btn1" href="index.html">Home</a></li>
+                <li><a class="btn1" href="Brawlers.html">Brawlers</a></li>
+                <li><a class="btn1" href="Mapas.html">Mapas</a></li>
+                <li><a class="btn1" href="Changes.html">Changes</a></li>
+                <li><a class="btn1" href="News.html">News</a></li>
+                <li><a class="btn1" href="Stats.html">Stats</a></li>
+                <li><a class="btn1" href="MOD.html">MOD</a></li>
+                <li><a class="btn1" href="Shop.html">Shop</a></li>
+            </ul>
+        </nav>
+
+        <div class="container1">
+            <div class="btn"><a href="UserAccount.html">Login</a></div>
+        </div>
+    </header>
+
+    <!-- --------------------- Day/Night Toggle Button ------------------ -->
+
+    <div class="toggle"></div>
+
+    <!-- --------------------- Audio Buttom Play & Pause ---------------- -->
+
+    <div>
+        <audio id="audio">
+            <source src="music/1.1.Menu_1.mp3" type="audio/mpeg">
+        </audio>
+    
+        <button id="playPauseBTN" class="playPauseBTN-1" onclick="playPause()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button id="playPauseBTN" class="playPauseBTN-2" onclick="stop()">Stop &#9611;</button>
+    </div>
+
+    <!-- ---------------------- Pop Up info ---------------------------- -->
+
+    <div class="popup">
+        <div class="contentBox">
+            <div class="close"></div>
+            <div class="imgBx">
+                <img src="images/Backgrounds/signUp.png" alt="">
+            </div>
+
+            <div class="content">
+                <div>
+                    <h3>¿Te gusta la música del juego?</h3>
+                    <h2>Sign<span>Up</span></h2>
+                    <p>Regístrate para escuchar y descargar las canciones de los menús, batallas y mucho más!</p>
+                    <a href="UserAccount.html">Go to sign up page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- Gallery Block  -------------------- -->
+
+    <section class="gallery-block cards-gallery">
+        <div class="container">
+
+            <!---------- Animation Title Effect - 1 --------------->
+
+            <div class="divTitle">
+                <h2 class="h2" data-text="Brawlers">Brawlers</h2>
+            </div>
+            
+            <!---------- Animation Title Effect - 2 --------------->
+
+             <div class="loader">
+                <span style="--i:1;">C</span>
+                <span style="--i:2;">a</span>
+                <span style="--i:3;">m</span>
+                <span style="--i:4;">i</span>
+                <span style="--i:5;">n</span>
+                <span style="--i:6;">o</span>
+                <span style="--i:7;">_</span>
+                <span style="--i:8;">d</span>
+                <span style="--i:9;">e</span>
+                <span style="--i:10;">_</span>
+                <span style="--i:11;">T</span>
+                <span style="--i:12;">r</span>
+                <span style="--i:13;">o</span>
+                <span style="--i:14;">f</span>
+                <span style="--i:15;">e</span>
+                <span style="--i:16;">o</span>
+                <span style="--i:17;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/1.2.Comun.Shelly.png"><img src="images/Brawlers/1.1.Comun.Shelly.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Shelly</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Shelly" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/2.2.Comun.Nita.png"><img src="images/Brawlers/2.1.Comun.Nita.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Nita</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Nita" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/3.2.Comun.Colt.png"><img src="images/Brawlers/3.1.Comun.Colt.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Colt</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Colt" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/4.2.Comun.Bull.png"><img src="images/Brawlers/4.1.Comun.Bull.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Bull</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Bull" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/5.2.Comun.Jessy.png"><img src="images/Brawlers/5.1.Comun.Jessy.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Jessy</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Jessie" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/6.2.Comun.Brock.png"><img src="images/Brawlers/6.1.Comun.Brock.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Brock</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Brock" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/7.2.Comun.Dinamike.png"><img src="images/Brawlers/7.1.Comun.Dinamike.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Dinamike</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Dynamike" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/8.2.Comun.Boo.png"><img src="images/Brawlers/8.1.Comun.Boo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Boo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Bo" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/9.2.Comun.Tick.png"><img src="images/Brawlers/9.1.Comun.Tick.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tick</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Tick" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/10.2.Comun.8bit.png"><img src="images/Brawlers/10.1.Comun.8bit.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>8-Bit</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/8-Bit" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/11.2.Comun.EMZ.png"><img src="images/Brawlers/11.1.Comun.EMZ.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>EMZ</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Emz" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!---------- Animation Title Effect - 2 --------------->
+
+            <div class="loader">
+                <span style="--i:1;">E</span>
+                <span style="--i:2;">s</span>
+                <span style="--i:3;">p</span>
+                <span style="--i:4;">e</span>
+                <span style="--i:5;">c</span>
+                <span style="--i:6;">i</span>
+                <span style="--i:7;">a</span>
+                <span style="--i:8;">l</span>
+                <span style="--i:9;">e</span>
+                <span style="--i:10;">s</span>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/12.2.Especial.Primo.png"><img src="images/Brawlers/12.1.Especial.Primo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>El Primo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/El-Primo" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/14.2.Especial.Poco.png"><img src="images/Brawlers/14.1.Especial.Poco.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Poco</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Poco" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/15.2.Especial.Rosa.png"><img src="images/Brawlers/15.1.Especial.Rosa.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Rosa</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Rosa" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/13.2.Especial.Barley.png"><img src="images/Brawlers/13.1.Especial.Barley.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Barley</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Barley" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------- Animation Title Effect - 2 --------------->
+            
+            <div class="loader">
+                <span style="--i:1;">S</span>
+                <span style="--i:2;">u</span>
+                <span style="--i:3;">p</span>
+                <span style="--i:4;">e</span>
+                <span style="--i:5;">r</span>
+                <span style="--i:6;">_</span>
+                <span style="--i:7;">E</span>
+                <span style="--i:8;">s</span>
+                <span style="--i:9;">p</span>
+                <span style="--i:10;">e</span>
+                <span style="--i:11;">c</span>
+                <span style="--i:12;">i</span>
+                <span style="--i:13;">a</span>
+                <span style="--i:14;">l</span>
+                <span style="--i:15;">e</span>
+                <span style="--i:16;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/17.2.Superespecial.Darryl.png"><img src="images/Brawlers/17.1.Superespecial.Darryl.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Darryl</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Darryl" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/18.2.Superespecial.Penny.png"><img src="images/Brawlers/18.1.Superespecial.Penny.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Penny</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Penny" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/19.2.Superespecial.Carl.png"><img src="images/Brawlers/19.1.Superespecial.Carl.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Carl</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Carl" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/20.2.Superespecial.Jackie.png"><img src="images/Brawlers/20.1.Superespecial.Jackie.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Jackie</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Jacky" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/16.2.Superespecial.Rico.png"><img src="images/Brawlers/16.1.Superespecial.Rico.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Rico</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Rico" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">É</span>
+                <span style="--i:2;">p</span>
+                <span style="--i:3;">i</span>
+                <span style="--i:4;">c</span>
+                <span style="--i:5;">o</span>
+                <span style="--i:6;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/21.2.Epico.Pipper.png"><img src="images/Brawlers/21.1.Epico.Pipper.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Penny</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Piper" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/22.2.Epico.Pam.png"><img src="images/Brawlers/22.1.Epico.Pam.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Pam</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Pam" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/23.2.Epico.Frank.png"><img src="images/Brawlers/23.1.Epico.Frank.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Frank</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Frank" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/24.2.Epico.Bibi.png"><img src="images/Brawlers/24.1.Epico.Bibi.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Bibi</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Bibi" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/25.2.Epico.Bea.png"><img src="images/Brawlers/25.1.Epico.Bea.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Bea</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Bea" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/26.2.Epico.Nani.png"><img src="images/Brawlers/26.1.Epico.Nani.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Nani</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Nani" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="#"><img src="images/Brawlers/27.1.Epico.Edgard.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Edgar</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Edgar" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">M</span>
+                <span style="--i:2;">í</span>
+                <span style="--i:3;">t</span>
+                <span style="--i:4;">i</span>
+                <span style="--i:5;">c</span>
+                <span style="--i:6;">o</span>
+                <span style="--i:7;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/30.2.Mitico.Tara.png"><img src="images/Brawlers/30.1.Mitico.Tara.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tara</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Tara" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/31.2.Mitico.Genio.png"><img src="images/Brawlers/31.1.Mitico.Genio.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Genio</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Gene" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/32.2.Mitico.Max.png"><img src="images/Brawlers/32.1.Mitico.Max.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Max</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Max" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/33.2.Mitico.MrP.png"><img src="images/Brawlers/33.1.Mitico.MrP.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Mr.P</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Mr.P" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/34.2.Mitico.Sprout.png"><img src="images/Brawlers/34.1.Mitico.Sprout.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Sprout</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Sprout" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="#"><img src="images/Brawlers/35.1.Mitico.Byron.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Byron</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Byron" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/29.2.Mitico.Mortis.png"><img src="images/Brawlers/28.1.Mitico.Mortis.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Mortis</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Mortis" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">L</span>
+                <span style="--i:2;">e</span>
+                <span style="--i:3;">g</span>
+                <span style="--i:4;">e</span>
+                <span style="--i:5;">n</span>
+                <span style="--i:6;">d</span>
+                <span style="--i:7;">a</span>
+                <span style="--i:8;">r</span>
+                <span style="--i:9;">i</span>
+                <span style="--i:10;">o</span>
+                <span style="--i:11;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/38.2.Legendario.Leon.png"><img src="images/Brawlers/38.1.Legendario.Leon.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Leon</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Leon" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/39.2.Legendario.Sandy.png"><img src="images/Brawlers/39.1.Legendario.Sandy.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Sandy</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Sandy" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="#"><img src="images/Brawlers/40.1.Legendario.Amber.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Amber</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Amber" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/36.2.Legendario.Spike.png"><img src="images/Brawlers/36.1.Legendario.Spike.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Spike</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Spike" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/37.2.Legendario.Crow.png"><img src="images/Brawlers/37.1.Legendario.Crow.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Crow</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Crow" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">C</span>
+                <span style="--i:2;">r</span>
+                <span style="--i:3;">o</span>
+                <span style="--i:4;">m</span>
+                <span style="--i:5;">á</span>
+                <span style="--i:6;">t</span>
+                <span style="--i:7;">i</span>
+                <span style="--i:8;">c</span>
+                <span style="--i:9;">o</span>
+                <span style="--i:10;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/42.2.Cromatico.Surge.png"><img src="images/Brawlers/42.1.Cromatico.Surge.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Surge</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Surge" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/43.2.Cromatico.Colette.jpg"><img src="images/Brawlers/43.1.Cromatico.Colette.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Colette</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Colette" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/44.2.Cromatico.Lou.png"><img src="images/Brawlers/44.1.Cromatico.Lou.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Lou</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Lou" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/45.2.Cromatico.Ruffs.png"><img src="images/Brawlers/45.1.Cromatico.Ruffs.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Ruffs</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Colonel-Ruffs" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Brawlers/41.2.Cromatico.Gale.png"><img src="images/Brawlers/41.1.Cromatico.Gale.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Gale</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/brawlers/detail/Gale" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------- FOOTER  -------------->
+
+    <div class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download for Android & IOS mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=ES" target="blank"><img src="images/Shop/Logo_GooglePlay.png" alt=""></a>
+                        <a href="https://apps.apple.com/es/app/brawl-stars/id1229016807" target="blank"><img src="images/Shop/Logo_AppStore.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/Shop/Logo_CocaCola.png" alt="">
+                    <p>Este contenido no está afiliado, respaldado, patrocinado o aprobado específicamente por Supercell, y Supercell no es responsable de ello.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usuful links</h3>
+                    <ul>
+                        <li><a href="ContactForm.html">Contact Us</a></li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://es-es.facebook.com/brawlstars" target="blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/brawlstars/?hl=es" target="blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw" target="blank">YouTube</a></li>
+                        <li><a href="https://twitter.com/BrawlStarsES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Sergio Díaz Campos</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- ----------------- BaguetteBox ---------------------- -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    
+    <script>
+        baguetteBox.run('.cards-gallery', {animation: 'slideIn'});
+    </script>
+
+    <!-- ----------------- Day/Night Toggle Button --------------------- -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active');
+                $('body').toggleClass('night');
+            });
+        });
+    </script>
+
+    <!-------------------- AnimatedCircleTextEffect-Cursor ---------------->
+    
+    <script>
+        //ahora, dividir la cadena de texto en caracteres
+        const text = document.querySelector('.text1');
+        text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+
+        const element = document.querySelectorAll('span');
+        for(let i=0; i<element.length; i++){
+            element[i].style.transform = "rotate("+i*20+"deg)" //para los grados de la circunferencia y que se complete
+        }
+
+        document.addEventListener("mousemove", function(e){
+            text.style.left = e.pageX + 'px';
+            text.style.top = e.pageY + 'px';
+        });
+    </script>
+
+    <!---------------------- Scroll To Top Button ------------------------>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){ //para definir la altura a la que quiero que aparezca el botón
+            var scroll = document.querySelector('.scrollTop');
+            scroll.classList.toggle("active", window.scrollY > 500)
+        });
+
+        function scrollToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <!-- -------------------- Scroll Bar ---------------------------------->
+
+    <script type="text/javascript">
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+    <!-- --------------------- Audio Buttom Play & Pause ---------------- -->
+
+    <script src="JS Proyect/audioButtomPlay&Pause.js"></script>
+
+    <!---------- Automatic show popup after x seconds of page load ------------->
+
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close');
+
+        window.onload = function(){
+            setTimeout(function(){
+                popup.style.display = "block"; //lo bloqueamos para que no salga al principio del tirón
+
+                //Add some time delay to show popup  
+            }, 6000)
+        }
+
+        close.addEventListener('click', () => {
+            popup.style.display = "none";
+        })
+    </script>
+
+    <!-- -------------------- Full Screen mode ------------------ -->
+
+    <script>
+        function getFullscreenElement(){
+            return document.fullscreenElement
+            || document.webkitFullscreenElement
+            || document.mozFullscreenElement
+            || document.msFullscreenElement;
+        }
+
+        function toggleFullscreen(){
+            if(getFullscreenElement()){
+                document.exitFullscreen();
+            }else{
+                document.documentElement.requestFullscreen().catch(console.log); 
+                // document.getElementById("#").requestFullscreen().catch(console.log); //para que se active clickeando en un solo elemento
+            }
+        }
+
+        document.addEventListener("dblclick", () => {
+            toggleFullscreen();
+        });
+
+        document.addEventListener("fullscreenchange", () => {
+            console.log("full screen changed");
+        });
+    </script>
+
+    </body>
+
+    <!-- HECHO CON BOOTSTRAP v4.1  (TODO copiado del nota del video) https://www.youtube.com/watch?v=gnDOjWUSHks&feature=youtu.be&ab_channel=webseotips --> 
+</html>

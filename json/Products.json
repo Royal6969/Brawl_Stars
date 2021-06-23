@@ -1,0 +1,396 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Llavero Mortis",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.1.Llavero_Mortis.png"            
+        },
+        {
+            "id": 2,
+            "title": "Llavero Mr.P",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.2.LlaveroMrP.png"
+        },
+        {
+            "id": 3,
+            "title": "Llavero Carl",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.3.LlaveroCarl.png"
+        },
+        {
+            "id": 4,
+            "title": "Llavero Bibi",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.4.LlaveroBibi.png"
+        },
+        {
+            "id": 5,
+            "title": "Llavero Sandy",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.5.LlaveroSandy.png"
+
+        },
+        {
+            "id": 6,
+            "title": "Llavero Jackie",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.6.LlaveroJackie.png"
+
+        },
+        {
+            "id": 7,
+            "title": "Llavero Tick",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.7.LlaveroTick.png"
+        },
+        {
+            "id": 8,
+            "title": "Llavero Tara",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.8.LlaveroTara.png"
+        },
+        {
+            "id": 9,
+            "title": "Llavero Leon",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.9.LlaveroLeon.png"
+        },
+        {
+            "id": 10,
+            "title": "Llavero Bea",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.10.llaveroBea.png"
+        },
+        {
+            "id": 11,
+            "title": "Llavero Boo",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.11.LlaveroBoo.png"
+        },
+        {
+            "id": 12,
+            "title": "Llavero Sprout",
+            "price": 2.49,
+            "image": "images/ShopProductDetails/1.12.LlaveroSprout.png"
+        },
+        {
+            "id": 13,
+            "title": "Despertador Intro 1",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.2.Reloj2.png"
+        },
+        {
+            "id": 14,
+            "title": "Despertador Intro 2",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.3.Reloj3.png"
+        },
+        {
+            "id": 15,
+            "title": "Despertador Brawlers 1",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.4.Reloj4.png"
+        },
+        {
+            "id": 16,
+            "title": "Despertador Brawlers 2",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.5.Reloj5.png"
+        },
+        {
+            "id": 17,
+            "title": "Despertador Brawl Stars Logo",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.6.Reloj6.png"
+        },
+        {
+            "id": 18,
+            "title": "Despertador Spike",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.7.Reloj7.png"
+        },
+        {
+            "id": 19,
+            "title": "Despertador Leon",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.8.Reloj8.png"
+        },
+        {
+            "id": 20,
+            "title": "Despertador Poco",
+            "price": 4.99,
+            "image": "images/ShopProductDetails/2.9.Reloj9.png"
+        },
+        {
+            "id": 21,
+            "title": "Cojín Intro",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.1.Almohada1.png"
+        },
+        {
+            "id": 22,
+            "title": "Cojín Brawlers 1",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.2.Almohada2.png"
+        },
+        {
+            "id": 23,
+            "title": "Cojín Brawlers 2",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.3.Almohada3.png"
+        },
+        {
+            "id": 24,
+            "title": "Cojín Brawl Stars Logo",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.4.Almohada4.png"
+        },
+        {
+            "id": 25,
+            "title": "Cojín skins Legendaries",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.5.Almohada5.png"
+        },
+        {
+            "id": 26,
+            "title": "Cojín Leon Shark skin",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.6.Almohada6.png"
+        },
+        {
+            "id": 27,
+            "title": "Cojín Crow Fenix skin",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.7.Almohada7.png"
+        },
+        {
+            "id": 28,
+            "title": "Cojín Brawlers Legendaries",
+            "price": 4.49,
+            "image": "images/ShopProductDetails/3.8.Almohada8.png"
+        },
+        {
+            "id": 29,
+            "title": "Alfombrilla Intro",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.1.Alfombrilla1.png"
+        },
+        {
+            "id": 30,
+            "title": "Alfombrilla Brawlers",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.2.Alfombrilla2.png"
+        },
+        {
+            "id": 31,
+            "title": "Alfombrilla 8-bit team",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.3.Alfombrilla3.png"
+        },
+        {
+            "id": 32,
+            "title": "Alfombrilla Retro skins",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.4.Alfombrilla4.png"
+        },
+        {
+            "id": 33,
+            "title": "Alfombrilla Robot skins 1",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.5.Alfombrilla5.png"
+        },
+        {
+            "id": 34,
+            "title": "Alfombrilla Robot skins 2",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.6.Alfombrilla6.png"
+        },
+        {
+            "id": 35,
+            "title": "Alfombrilla Leon",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.7.Alfombrilla7.png"
+        },
+        {
+            "id": 36,
+            "title": "Alfombrilla Colt",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.8.Alfombrilla8.png"
+        },
+        {
+            "id": 37,
+            "title": "Alfombrilla Spike",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.9.Alfombrilla9.png"
+        },
+        {
+            "id": 38,
+            "title": "Alfombrilla Crow Fenix",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.10.Alfombrilla10.png"
+        },
+        {
+            "id": 39,
+            "title": "Alfombrilla Barley",
+            "price": 2.99,
+            "image": "images/ShopProductDetails/4.11.Alfombrilla11.png"
+        },
+        {
+            "id": 40,
+            "title": "Figura Bea",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.2.Figura2.png"
+        },
+        {
+            "id": 41,
+            "title": "Figura Penny",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.3.Figura3.png"
+        },
+        {
+            "id": 42,
+            "title": "Figura Genio",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.4.Figura4.png"
+        },
+        {
+            "id": 43,
+            "title": "Figura Leon",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.5.Figura5.png"
+        },
+        {
+            "id": 44,
+            "title": "Figura Tara",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.6.Figura6.png"
+        },
+        {
+            "id": 45,
+            "title": "Figura Jessy",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.7.Figura7.png"
+        },
+        {
+            "id": 46,
+            "title": "Figura Pipper",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.8.Figura8.png"
+        },
+        {
+            "id": 47,
+            "title": "Figura Pam",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.9.Figura9.png"
+        },
+        {
+            "id": 48,
+            "title": "Figura Brock",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.10.Figura10.png"
+        },
+        {
+            "id": 49,
+            "title": "Figura Frank",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.11.Figura11.png"
+        },
+        {
+            "id": 50,
+            "title": "Figura Darryl",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.12.Figura12.png"
+        },
+        {
+            "id": 51,
+            "title": "Figura Dinamyke",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.13.Figura13.png"
+        },
+        {
+            "id": 52,
+            "title": "Figura Barley",
+            "price": 3.10,
+            "image": "images/ShopProductDetails/5.14.Figura14.png"
+        },
+        {
+            "id": 53,
+            "title": "Edredón Brawlers 1",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.2.Sabana2.png"
+        },
+        {
+            "id": 54,
+            "title": "Edredón Brawlers 2",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.3.Sabana3.png"
+        },
+        {
+            "id": 55,
+            "title": "Edredón Brawlers 3",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.4.Sabana4.png"
+        },
+        {
+            "id": 56,
+            "title": "Edredón Intro 1",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.5.Sabana5.png"
+        },
+        {
+            "id": 57,
+            "title": "Edredón Intro 2",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.6.Sabana6.png"
+        },
+        {
+            "id": 58,
+            "title": "Edredón Legendaries",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.7.Sabana7.png"
+        },
+        {
+            "id": 59,
+            "title": "Edredón Line-Friends skins",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.8.Sabana8.png"
+        },
+        {
+            "id": 60,
+            "title": "Edredón Leon",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.9.Sabana9.png"
+        },
+        {
+            "id": 61,
+            "title": "Edredón EMZ",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.10.Sabana10.png"
+        },
+        {
+            "id": 62,
+            "title": "Edredón Leon Line-Friends skin",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.11.Sabana11.png"
+        },
+        {
+            "id": 63,
+            "title": "Edredón Spike",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.12.Sabana12.png"
+        },
+        {
+            "id": 64,
+            "title": "Edredón Sandy Pijama skin",
+            "price": 14.9,
+            "image": "images/ShopProductDetails/6.13.Sabana13.png"
+        },
+        {
+            "id": 65,
+            "title": "Botella Térmica Legendaries",
+            "price": 19.9,
+            "image": "images/ShopProductDetails/7.1.Botella1.png"
+        }
+    ]
+}

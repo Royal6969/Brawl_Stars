@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+        <link rel="stylesheet" href="CSS Proyect/Shop.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="shortcut icon" href="images/Extras/BrawlStars-Icon_3.png" type="image/x-icon">
+        
+        <title>Shop</title>
+    </head>
+
+    <body>
+
+        <!-- --------------------- Day/Night Toggle Button ------------------ -->
+
+        <div class="toggle"></div>
+
+        <!---------------------- AnimatedCircleTextEffect-Cursor ------------------>
+
+        <section class="cursor1">
+            <!-- <h2 class="text1">¿Te-gusta-mi-web?-</h2> -->
+            <h2 class="text1">Pulsa-una-seccion-</h2>
+        </section> 
+
+        <!----------------------- Scroll To Top Button --------------------------->
+
+        <div class="scrollTop" onclick="scrollToTop();"></div>
+
+        <!----------------------- Scroll Bar ------------------------------------->
+
+        <div id="progressBar"></div>
+        <div id="scrollPath"></div>
+
+        <!-- -------------------- Cookie Consent Box ----------------------------->
+        <div class="wrapper">
+            <img class="img" src="images/Backgrounds/cookies.png" alt="">
+
+            <div class="content">
+                <!-- <header class="header">Cookies Consent</header> -->
+                <div class="header1">Cookie Consent</div>
+                <p class="p">This website use cookies to ensure you get the best experience on our website</p>
+                <div class="buttons">
+                    <button class="item">I understand</button>
+                    <a href="#" class="item">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------- NavBar ---------------------- -->
+
+        <header>
+            <a href="index.html"><img class="logo" src="images/NavBar/Logo_Leon.png" alt="logo"></a>
+            <nav>
+                <ul class="NavLinks">
+                    <li><a class="btn1" href="index.html">Home</a></li>
+                    <li><a class="btn1" href="Brawlers.html">Brawlers</a></li>
+                    <li><a class="btn1" href="Mapas.html">Mapas</a></li>
+                    <li><a class="btn1" href="Changes.html">Changes</a></li>
+                    <li><a class="btn1" href="News.html">News</a></li>
+                    <li><a class="btn1" href="Stats.html">Stats</a></li>
+                    <li><a class="btn1" href="MOD.html">MOD</a></li>
+                    <li><a class="btn1" href="Shop.html">Shop</a></li>
+                </ul>
+            </nav>
+            <!-- <a class="cta" href="#"><button>Contact</button></a> -->
+            <div class="container1">
+                <div class="btn2"><a href="UserAccount.html">Login</a></div>
+            </div>
+        </header>
+
+        
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <h1 class="h1">Bienvenidos a la Brawl Shop</h1>
+                        <p class="p">Descubre los productos exclusivos que ofrecemos de Brawl Stars.<br>Sabemos lo difícil que es buscar un buen merchandising de tu juego<br>y nosotros hemos encontrado el mejor para ti.<br>Echa un vistazo a nuestras diferentes secciones de productos<br>y pulsa en alguna para descubrir más ... 
+                        </p>
+                        <a href="#" class="btn a">Explore Now &#9996;</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/MOD/Robots2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- CATEGORIAS DESTACADAS -->
+    
+        <div class="categories">
+            <div class="small-container">
+                <h2 class="title">Secciones</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="ShopProductsDetails-1.Llaveros.html"><img src="images/Shop/1.CategoriaLlavero.png" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="ShopProductsDetails-2.Relojes.html"><img src="images/Shop/2.CategoriaRelojes.jpg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="ShopProductsDetails-3.Almohadas.html"><img src="images/Shop/3.CategoriaAlmohadas.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a href="ShopProductsDetails-4.Alfombrillas.html"><img src="images/Shop/4.CategoriaAlfombrillas.jpg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="ShopProductsDetails-5.Figuras.html"><img src="images/Shop/5.CategoriaFiguras.jpg" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="ShopProductsDetails-6.Sabanas.html"><img src="images/Shop/6.CategoriaSabanas.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTOS DESTACADOS -->
+
+        <div class="small-container">
+            <h2 class="title">Productos Destacados</h2>
+
+            <div class="row">
+                <div class="col-4">
+                    <a href="ShopProductsDetails-1.Llaveros.html"><img src="images/ShopProductDetails/1.1.Llavero_Mortis.png" alt=""></a>
+                    <h4>Llavero Mortis</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+                <div class="col-4">
+                    <a href="ShopProductsDetails-2.Relojes.html"><img src="images/ShopProductDetails/2.9.Reloj9.png" alt=""></a>
+                    <h4>Reloj Poco</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+                <div class="col-4">
+                    <a href="ShopProductsDetails-3.Almohadas.html"><img src="images/ShopProductDetails/3.6.Almohada6.png" alt=""></a>
+                    <h4>Cojín Leon Shark skin</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+                <div class="col-4">
+                    <a href="ShopProductsDetails-4.Alfombrillas.html"><img src="images/ShopProductDetails/4.10.Alfombrilla10.png" alt=""></a>
+                    <h4>Alfombrilla Crown Fenix skin</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+            </div>
+
+            <h2 class="title">Últimos productos</h2>
+
+            <div class="row">
+                <div class="col-4">
+                    <a href="ShopProductsDetails-4.Alfombrillas.html"><img src="images/ShopProductDetails/4.11.Alfombrilla11.png" alt=""></a>
+                    <h4>Alfombrilla Barley Wizard skin</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+                <div class="col-4">
+                    <a href="ShopProductsDetails-5.Figuras.html"><img src="images/ShopProductDetails/5.10.Figura10.png" alt=""></a>
+                    <h4>Figura Brock</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+                <div class="col-4">
+                    <a href="ShopProductsDetails-6.Sabanas.html"><img src="images/ShopProductDetails/6.10.Sabana10.png" alt=""></a>
+                    <h4>Manta Nórdica EMZ</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+                <div class="col-4">
+                    <a href="ShopProductsDetails-2.Relojes.html"><img src="images/ShopProductDetails/2.8.Reloj8.png" alt=""></a>
+                    <h4>Reloj Leon</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>5,50€</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- OFERTAS -->
+
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/ShopProductDetails/7.1.Botella1.png" class="offer-img" alt="">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively available on BrawlStar Store</p>
+                        <h1 class="h1-2">Botella térmica</h1>
+                        <small>EL producto de merchandising definitivo que no te imaginabas que existiera.<br>Esta botella térmica aguantará el frío de tus bebidas en la playa<br>así como el café caliente para cuando entres en la oficina.</small><br>
+                        <a href="ShopProductsDetails-1.Llaveros.html" class="btn">Buy now &#9918;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ---------- COMENTARIOS ----------- -->
+
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3 testimonial-single">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Me encanta la web Sergio, se nota que has puesto mucha dedicación. Quizás hasta me compre el edredón nórdico de EMZ para las próximas navidades jajaj</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/Shop/JesusSSII.jpeg" alt="">
+                        <h3>Jesús García</h3>
+                    </div>
+
+                    <div class="col-3 testimonial-single">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Te ha quedado realmente bien esta parte de la tienda, cuando pulsas en una sección de productos se parece al AliExpress, está muy bien conseguido!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/Shop/FranBBDD.jpeg" alt="">
+                        <h3>Fran Muñoz</h3>
+                    </div>
+
+                    <div class="col-3 testimonial-single">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Si este chico no aprobaba programación no entiendo cómo ha podido hacer toda esta página web ... seguramente se haya copiado por ahí, aunque si es verdad que ha quedado todo muy chulo.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="images/Shop/EvaProgramacion.jpeg" alt="">
+                        <h3>Eva Palomo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------- BRANDS ----------------------->
+
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="https://www.cocacola.es/es/home/" target="blank"><img src="images/Shop/Logo_CocaCola.png" alt=""></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://www.playstation.com/es-es/" target="blank"><img src="images/Shop/Logo-PlayStation.png" alt=""></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://discord.com/" target="blank"><img src="images/Shop/Discord-Logo.png" alt=""></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://www.redbull.com/es-es/" target="blank"><img src="images/Shop/red-bull-logo.png" alt=""></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://www.marlboro.com/" target="blank"><img src="images/Shop/Marlboro-Logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------- FOOTER  -------------->
+
+        <div class="footer">
+            <div class="container2">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Download for Android & IOS mobile phone</p>
+                        <div class="app-logo">
+                            <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=ES" target="blank"><img src="images/Shop/Logo_GooglePlay.png" alt=""></a>
+                            <a href="https://apps.apple.com/es/app/brawl-stars/id1229016807" target="blank"><img src="images/Shop/Logo_AppStore.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/Shop/Logo_CocaCola.png" alt="">
+                        <p>Este contenido no está afiliado, respaldado, patrocinado o aprobado específicamente por Supercell, y Supercell no es responsable de ello.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Usuful links</h3>
+                        <ul>
+                            <li><a href="ContactForm.html">Contact Us</a></li>
+                            <li>Blog post</li>
+                            <li>Return policy</li>
+                            <li>Join affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://es-es.facebook.com/brawlstars" target="blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/brawlstars/?hl=es" target="blank">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw" target="blank">YouTube</a></li>
+                            <li><a href="https://twitter.com/BrawlStarsES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Sergio Díaz Campos</p>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+
+            <!-- ----------------- Day/Night Toggle Button --------------------- -->
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.toggle').click(function(){
+                        $('.toggle').toggleClass('active');
+                        $('body').toggleClass('night');
+                        $('header').toggleClass('night');
+                        $('.header').toggleClass('night');
+                    });
+                });
+            </script>
+
+            <!-------------------- AnimatedCircleTextEffect-Cursor ---------------->
+            <script>
+                //ahora, dividir la cadena de texto en caracteres
+                const text = document.querySelector('.text1');
+                text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+
+                const element = document.querySelectorAll('span');
+                for(let i=0; i<element.length; i++){
+                    element[i].style.transform = "rotate("+i*20+"deg)" //para los grados de la circunferencia y que se complete
+                }
+
+                document.addEventListener("mousemove", function(e){
+                    text.style.left = e.pageX + 'px';
+                    text.style.top = e.pageY + 'px';
+                })
+            </script>
+
+            <!---------------------- Scroll To Top Button ------------------------>
+
+            <script type="text/javascript">
+                window.addEventListener('scroll', function(){ //para definir la altura a la que quiero que aparezca el botón
+                    var scroll = document.querySelector('.scrollTop');
+                    scroll.classList.toggle("active", window.scrollY > 500)
+                })
+
+                function scrollToTop(){
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    })
+                }
+            </script>
+
+            <!-- -------------------- Scroll Bar ---------------------------------->
+
+            <script type="text/javascript">
+                let progress = document.getElementById('progressBar');
+                let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+                window.onscroll = function(){
+                    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+
+                    progress.style.height = progressHeight + "%";
+                }
+            </script>
+
+            <!-- -------------------- Full Screen mode ------------------ -->
+            <script>
+                function getFullscreenElement(){
+                    return document.fullscreenElement
+                    || document.webkitFullscreenElement
+                    || document.mozFullscreenElement
+                    || document.msFullscreenElement;
+                }
+
+                function toggleFullscreen(){
+                    if(getFullscreenElement()){
+                        document.exitFullscreen();
+                    }else{
+                        document.documentElement.requestFullscreen().catch(console.log); 
+                        // document.getElementById("#").requestFullscreen().catch(console.log); //para que se active clickeando en un solo elemento
+                    }
+                }
+
+                document.addEventListener("dblclick", () => {
+                    toggleFullscreen();
+                });
+
+                document.addEventListener("fullscreenchange", () => {
+                    console.log("full screen changed");
+                });
+                
+            </script>
+
+            <!-- -------------------- Cookie Consent Box ---------------------- -->
+            <script>
+                const cookieBox = document.querySelector(".wrapper"),
+                acceptBtn = cookieBox.querySelector(".buttons button");
+    
+                acceptBtn.onclick = () => {
+                    //console.log("Button clicked !!"); //para un testeo puntual
+                    
+                    //setting cookies foe 1 month, afeter 1 month cookie will be expired automatically
+                    document.cookie = "CookieBY = Royal; max-age="+60*60*24*30;
+    
+                    if(document.cookie){ //if the above cookie set
+                        cookieBox.classList.add("hide"); //hide cookie box once cookie set 
+                    }else{
+                        alert("Cookie can't be set !"); //if cookie can't be set the alert an error
+                    }
+                }
+                //let's hide the cookie box if cookie is set and not expired
+                let checkCookie = document.cookie.indexOf("CookieBY = Royal"); //checking our set cookie
+                //if cookie is set the hide the cookie box else show it 
+                checkCookie != -1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide"); //joe no me funciona del todo bn el que se esconda
+            </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="CSS Proyect/bootstrap_4.1.min.css">
+    <link rel="stylesheet" href="CSS Proyect/Mapas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+
+    <link rel="shortcut icon" href="images/Extras/BrawlStars-Icon_3.png" type="image/x-icon">
+    
+    <title>Mapas</title>
+
+  </head>
+
+  <body>
+
+    <!---------------------- AnimatedCircleTextEffect-Cursor ------------------>
+
+    <section class="cursor1">
+        <!-- <h2 class="text1">¿Te-gusta-mi-web?-</h2> -->
+        <h2 class="text1">Pulsa-en-un-mapa--</h2>
+    </section> 
+
+    <!----------------------- Scroll To Top Button --------------------------->
+
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+
+    <!----------------------- Scroll Bar ------------------------------------->
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+    <!-- ---------------------- NavBar ---------------------- -->
+
+    <header>
+        <a href="index.html"><img class="logo" src="images/NavBar/Logo_Leon.png" alt="logo"></a>
+        <nav>
+            <ul class="NavLinks">
+                <li><a class="btn1" href="index.html">Home</a></li>
+                <li><a class="btn1" href="Brawlers.html">Brawlers</a></li>
+                <li><a class="btn1" href="Mapas.html">Mapas</a></li>
+                <li><a class="btn1" href="Changes.html">Changes</a></li>
+                <li><a class="btn1" href="News.html">News</a></li>
+                <li><a class="btn1" href="Stats.html">Stats</a></li>
+                <li><a class="btn1" href="MOD.html">MOD</a></li>
+                <li><a class="btn1" href="Shop.html">Shop</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container1">
+            <div class="btn"><a href="UserAccount.html">Login</a></div>
+        </div>
+    </header>
+
+    <!-- --------------------- Day/Night Toggle Button ------------------ -->
+
+    <div class="toggle"></div>
+
+    <!-- --------------------- Audio Buttom Play & Pause ---------------- -->
+
+    <div>
+        <audio id="audio">
+            <source src="music/1.1.Menu_1.mp3" type="audio/mpeg">
+        </audio>
+    
+        <button id="playPauseBTN" class="playPauseBTN-1" onclick="playPause()">Play &#9658;</button>
+        &nbsp;
+        &nbsp;
+        <button id="playPauseBTN" class="playPauseBTN-2" onclick="stop()">Stop &#9611;</button>
+    </div>
+
+    <!-- ---------------------- Gallery Block  -------------------- -->
+
+    <section class="gallery-block cards-gallery">
+        <div class="container">
+            <!-- <div class="heading">
+                <h2>Galeria de Mapas</h2>
+            </div> -->
+
+            <!---------- Animation Title Effect - 1 --------------->
+            <div class="divTitle">
+                <h2 class="h2" data-text="Mapas">Mapas</h2>
+            </div>
+            
+            <!---------- Animation Title Effect - 2 --------------->
+             <div class="loader">
+                <span style="--i:1;">Z</span>
+                <span style="--i:2;">o</span>
+                <span style="--i:3;">n</span>
+                <span style="--i:4;">a</span>
+                <span style="--i:5;">_</span>
+                <span style="--i:6;">R</span>
+                <span style="--i:7;">e</span>
+                <span style="--i:8;">s</span>
+                <span style="--i:9;">t</span>
+                <span style="--i:10;">r</span>
+                <span style="--i:11;">i</span>
+                <span style="--i:12;">n</span>
+                <span style="--i:13;">g</span>
+                <span style="--i:14;">i</span>
+                <span style="--i:15;">d</span>
+                <span style="--i:16;">a</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/1.ZR.AtaqueMasivo.png"><img src="images/Mapas/1.ZR.AtaqueMasivo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Ataque Masivo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Massive-Attack" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/2.ZR.DueloDeEscarabajos.png"><img src="images/Mapas/2.ZR.DueloDeEscarabajos.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Duelo de Escarabajos</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Dueling-Beetles" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/3.ZR.EstrategiasParalelas.png"><img src="images/Mapas/3.ZR.EstrategiasParalelas.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Estrategias Paralelas</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Parallel-Plays" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/4.ZR.Division.png"><img src="images/Mapas/4.ZR.Division.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>División</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Split" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/5.ZR.ConveyorClash.png"><img src="images/Mapas/5.ZR.ConveyorClash.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Conveyor Clash</h6>
+                            <div class="container3">
+                                <a href="#"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/6.ZR.TriumVirate.png"><img src="images/Mapas/6.ZR.TriumVirate.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Trium Virate</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Triumvirate" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/7.ZR.QuickTravel.png"><img src="images/Mapas/7.ZR.QuickTravel.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Quick Travel</h6>
+                            <div class="container3">
+                                <a href="#"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/8.ZR.MagneticField.png"><img src="images/Mapas/8.ZR.MagneticField.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Magnetic Field</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Magnetic-Field" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">A</span>
+                <span style="--i:2;">t</span>
+                <span style="--i:3;">r</span>
+                <span style="--i:4;">a</span>
+                <span style="--i:5;">p</span>
+                <span style="--i:6;">a</span>
+                <span style="--i:7;">_</span>
+                <span style="--i:8;">G</span>
+                <span style="--i:9;">e</span>
+                <span style="--i:10;">m</span>
+                <span style="--i:11;">a</span>
+                <span style="--i:12;">s</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/13.AG.FuerteDeHielo.png"><img src="images/Mapas/13.AG.FuerteDeHielo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Fuerte de Hielo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Ice-Fort" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/14.AG.TiendaDeSerpientes.png"><img src="images/Mapas/14.AG.TiendaDeSerpientes.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tienda de Serpientes</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Snake-Shop" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/15.AG.AreneEnFolie.png"><img src="images/Mapas/15.AG.AreneEnFolie.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Arene en Foile</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Ar%C3%A8ne-en-folie" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/16.AG.HiedraVenenosa.png"><img src="images/Mapas/16.AG.HiedraVenenosa.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Hiedra Venenosa</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Deathcap-Trap-2" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/17.AG.DeEsquinaAEsquina.png"><img src="images/Mapas/17.AG.DeEsquinaAEsquina.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>De Esquina a Esquina</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Corner-Case-3" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/18.AG.CuevaSubterranea.png"><img src="images/Mapas/18.AG.CuevaSubterranea.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Cueva Subterránea</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Undermine" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/19.AG.Brrum.png"><img src="images/Mapas/19.AG.Brrum.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Brrrum Brrrum</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Double-Swoosh" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/20.AG.ArcadeDeCristal.png"><img src="images/Mapas/20.AG.ArcadeDeCristal.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Arena de Cristal</h6>
+                            <div class="container3">
+                                <a href="#"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/21.AG.RedHerring.png"><img src="images/Mapas/21.AG.RedHerring.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Red Herring</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Red-Herring" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/22.AG.RusticArcade.png"><img src="images/Mapas/22.AG.RusticArcade.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Rustic Arcade</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Rustic-Arcade" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/9.AG.¡AY OH!.png"><img src="images/Mapas/9.AG.¡AY OH!.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>¡AY OH!</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Minecart-Madness" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/10.AG.CafeteriaRetro.png"><img src="images/Mapas/10.AG.CafeteriaRetro.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Cafetería Retro</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Deep-Diner" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/11.AG.PresaInundada.png"><img src="images/Mapas/11.AG.PresaInundada.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Presa Inundada</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Flooded-Dam" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/12.AG.MinaRocosa.png"><img src="images/Mapas/12.AG.MinaRocosa.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Mina Rocosa</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Hard-Rock-Mine" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">S</span>
+                <span style="--i:2;">u</span>
+                <span style="--i:3;">p</span>
+                <span style="--i:4;">e</span>
+                <span style="--i:5;">r</span>
+                <span style="--i:6;">v</span>
+                <span style="--i:7;">i</span>
+                <span style="--i:8;">v</span>
+                <span style="--i:9;">e</span>
+                <span style="--i:10;">n</span>
+                <span style="--i:11;">c</span>
+                <span style="--i:12;">i</span>
+                <span style="--i:13;">a</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/25.SV.CastillosDeLadrillo.png"><img src="images/Mapas/25.SV.CastillosDeLadrillo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Castillos de Ladrillo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Rockwall-Brawl" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/26.SV.PedruscoChamuscado.png"><img src="images/Mapas/26.SV.PedruscoChamuscado.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Pedrusco Chamuscado</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Scorched-Stone" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/27.SV.ValleTempestuoso.png"><img src="images/Mapas/27.SV.ValleTempestuoso.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Valle Tempestuoso</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Stormy-Plains" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/28.SV.ArroyoCalavera.png"><img src="images/Mapas/28.SV.ArroyoCalavera.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Arroyo Calavera</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Skull-Creek" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/28.SV.TodoONada.png"><img src="images/Mapas/28.SV.TodoONada.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Todo o Nada</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Feast-or-Famine" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/29.SV.PendienteDesamparada.png"><img src="images/Mapas/29.SV.PendienteDesamparada.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Pendiente Desamparada</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Forsaken-Falls" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/30.SV.CentroSeguro.png"><img src="images/Mapas/30.SV.CentroSeguro.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Centro Seguro</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Safety-Center" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/31.SV.PasajeOscuro.png"><img src="images/Mapas/31.SV.PasajeOscuro.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Pasaje Oscuro</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Dark-Passage" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/32.SV.InvasionEnLaIsla.png"><img src="images/Mapas/32.SV.InvasionEnLaIsla.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Invasión en la Isla</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Island-Invasion" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/33.SV.CuevaProfunda.png"><img src="images/Mapas/33.SV.CuevaProfunda.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Cueva Profunda</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Cavern-Churn" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/34.SV.AdnuforpAveuC.png"><img src="images/Mapas/34.SV.AdnuforpAveuC.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>AdnuforpAveuC</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/nruhC-nrevaC" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/35.SV.ColiseoClash.png"><img src="images/Mapas/35.SV.ColiseoClash.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Coliseo Clash</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Clash-Colosseum" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/36.SV.TheGalaxy.png"><img src="images/Mapas/36.SV.TheGalaxy.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>The Galaxy</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/The-Galaxy" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/23.SV.LagosAcidos.png"><img src="images/Mapas/23.SV.LagosAcidos.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Lagos Ácidos</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Acid-Lakes" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/24.SV.DobleDilema.png"><img src="images/Mapas/24.SV.DobleDilema.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Doble Dilema</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Double-Trouble" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">A</span>
+                <span style="--i:2;">t</span>
+                <span style="--i:3;">r</span>
+                <span style="--i:4;">a</span>
+                <span style="--i:5;">c</span>
+                <span style="--i:6;">o</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/41.AT.PatataCaliente.png"><img src="images/Mapas/41.AT.PatataCaliente.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Patata Caliente</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Hot-Potato" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/42.AT.CañonExplosivo.png"><img src="images/Mapas/42.AT.CañonExplosivo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Cañón Explosivo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Kaboom-Canyon" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/37.AT.SnakedAssault.png"><img src="images/Mapas/37.AT.SnakedAssault.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Snaked Assault</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Snaked-Assault" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/38.AT.Refugio.png"><img src="images/Mapas/38.AT.Refugio.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Refugio</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Safe-Zone" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/39.AT.CambioDeRumbo.png"><img src="images/Mapas/39.AT.CambioDeRumbo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Cambio de Rumbo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Turnaround" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/40.AT.CentralTraffic.png"><img src="images/Mapas/40.AT.CentralTraffic.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Central Traffic</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Central-Traffic" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/41.AT.CementerioGG.png"><img src="images/Mapas/41.AT.CementerioGG.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Cementerio G.G.</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/G.G.-Mortuary" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">C</span>
+                <span style="--i:2;">a</span>
+                <span style="--i:3;">z</span>
+                <span style="--i:4;">a</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/43.CE.CanalGrande.png"><img src="images/Mapas/43.CE.CanalGrande.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Canal Grande</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Canal-Grande" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/44.CE.TiroteoEstelar.png"><img src="images/Mapas/44.CE.TiroteoEstelar.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tiroteo Estelar</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Shooting-Star" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/45.CE.SequiaSanguinaria.png"><img src="images/Mapas/45.CE.SequiaSanguinaria.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Sequía Sanguinaria</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Dry-Season" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/46.CE.TransporteEficaz.png"><img src="images/Mapas/46.CE.TransporteEficaz.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Transporte Eficaz</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Quick-Skip" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/47.CE.PraderaTraicionera.png"><img src="images/Mapas/47.CE.PraderaTraicionera.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Pradera Traicionera</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Snake-Prairie" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/48.CE.TierraALaVista.png"><img src="images/Mapas/48.CE.TierraALaVista.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tierra a la Vista</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Land-Ahoy" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+
+            <div class="row">
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/49.CE.OpenPlaza.png"><img src="images/Mapas/49.CE.OpenPlaza.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Open Plaza</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Open-Plaza" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/50.CE.ParaisoPurpura.png"><img src="images/Mapas/50.CE.ParaisoPurpura.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Paraiso Púrpura</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Purple-Paradise" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">B</span>
+                <span style="--i:2;">a</span>
+                <span style="--i:3;">l</span>
+                <span style="--i:4;">ó</span>
+                <span style="--i:5;">n</span>
+                <span style="--i:6;">_</span>
+                <span style="--i:7;">B</span>
+                <span style="--i:8;">r</span>
+                <span style="--i:9;">a</span>
+                <span style="--i:10;">w</span>
+                <span style="--i:11;">l</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/53.BB.EstadioBrawl.png"><img src="images/Mapas/53.BB.EstadioBrawl.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Estadio Brawl</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Backyard-Bowl" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/54.BB.GolDeCampo.png"><img src="images/Mapas/54.BB.GolDeCampo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Gol de Campo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Field-Goal" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/55.BB.JumpingBeans.png"><img src="images/Mapas/55.BB.JumpingBeans.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Jumping Beans</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Jumping-Beans" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/56.BB.FastFork.png"><img src="images/Mapas/56.BB.FastFork.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Fast Fork</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Fast-Fork" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/57.BB.Encirclement.png"><img src="images/Mapas/57.BB.Encirclement.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Encirclement</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Encirclement" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/58.BB.TiroATablero.png"><img src="images/Mapas/58.BB.TiroATablero.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tiro a Tablero</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Bank-Shot" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/59.BB.FutbolSoleado.png"><img src="images/Mapas/59.BB.FutbolSoleado.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Fútbol Soleado</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Sunny-Soccer" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/60.BB.PalcoCentral.png"><img src="images/Mapas/60.BB.PalcoCentral.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Palco Central</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Center-Stage" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/61.BB.CamposFurtivos.png"><img src="images/Mapas/61.BB.CamposFurtivos.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Campos Furtivos</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Sneaky-Fields" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/62.BB.BoxingDay.png"><img src="images/Mapas/62.BB.BoxingDay.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Boxing Day</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Boxing-Day" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/63.BB.CleanShot.png"><img src="images/Mapas/63.BB.CleanShot.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Clean Shot</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Clean-Shot" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/64.BB.WinterParty.png"><img src="images/Mapas/64.BB.WinterParty.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Winter Party</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Winter-Party" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/51.BB.SuperEstadio.png"><img src="images/Mapas/51.BB.SuperEstadio.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Super Estadio</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Super-Stadium" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/52.BB.TripleDrible.png"><img src="images/Mapas/52.BB.TripleDrible.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Triple Drible</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Triple-Dribble" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <span style="--i:1;">A</span>
+                <span style="--i:2;">s</span>
+                <span style="--i:3;">e</span>
+                <span style="--i:4;">d</span>
+                <span style="--i:5;">i</span>
+                <span style="--i:6;">o</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/65.AS.EnsamblajeSalvaje.png"><img src="images/Mapas/65.AS.EnsamblajeSalvaje.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Ensamblaje Salvaje</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Some-Assembly-Required" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/66.AS.AutopistaRobotica.png"><img src="images/Mapas/66.AS.AutopistaRobotica.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Autopista Robótica</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Robo-Highway" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/67.AS.BotRiot.png"><img src="images/Mapas/67.AS.BotRiot.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Bot Riot</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Bot-Riot" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/68.AS.RamaDeOlivo.png"><img src="images/Mapas/68.AS.RamaDeOlivo.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Rama de Olivo</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Olive-Branch" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/69.AS.RevolucionIndustrial.png"><img src="images/Mapas/69.AS.RevolucionIndustrial.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Revolución Industrial</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Factory-Rush" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/70.AS.TuercasYTornillos.png"><img src="images/Mapas/70.AS.TuercasYTornillos.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Tuercas y Tornillos</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Nuts-&-Bolts" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox" href="images/Mapas/71.AS.Robotizacion.png"><img src="images/Mapas/71.AS.Robotizacion.png" class="card-img-top"> </a>
+                        <div class="card-body">
+                            <h6>Robotización</h6>
+                            <div class="container3">
+                                <a href="https://brawlify.com/es/maps/detail/Bot-Drop" target="_blank"><span>Read More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!---------------- FOOTER  -------------->
+
+    <div class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download for Android & IOS mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&gl=ES" target="blank"><img src="images/Shop/Logo_GooglePlay.png" alt=""></a>
+                        <a href="https://apps.apple.com/es/app/brawl-stars/id1229016807" target="blank"><img src="images/Shop/Logo_AppStore.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/Shop/Logo_CocaCola.png" alt="">
+                    <p>Este contenido no está afiliado, respaldado, patrocinado o aprobado específicamente por Supercell, y Supercell no es responsable de ello.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usuful links</h3>
+                    <ul>
+                        <li><a href="ContactForm.html">Contact Us</a></li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://es-es.facebook.com/brawlstars" target="blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/brawlstars/?hl=es" target="blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw" target="blank">YouTube</a></li>
+                        <li><a href="https://twitter.com/BrawlStarsES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Sergio Díaz Campos</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- ----------------- BaguetteBox ---------------------- -->
+    
+    <script src="baguetteBox/baguetteBox.min.js"></script>
+    
+    <script>
+        baguetteBox.run('.cards-gallery', {animation: 'slideIn'});
+    </script>
+
+        <!-- ----------------- Day/Night Toggle Button --------------------- -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active');
+                    $('body').toggleClass('night');
+                });
+            });
+        </script>
+
+        <!-------------------- AnimatedCircleTextEffect-Cursor ---------------->
+
+        <script>
+            //ahora, dividir la cadena de texto en caracteres
+            const text = document.querySelector('.text1');
+            text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+    
+            const element = document.querySelectorAll('span');
+            for(let i=0; i<element.length; i++){
+                element[i].style.transform = "rotate("+i*20+"deg)" //para los grados de la circunferencia y que se complete
+            }
+    
+            document.addEventListener("mousemove", function(e){
+                text.style.left = e.pageX + 'px';
+                text.style.top = e.pageY + 'px';
+            })
+        </script>
+    
+        <!---------------------- Scroll To Top Button ------------------------>
+    
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){ //para definir la altura a la que quiero que aparezca el botón
+                var scroll = document.querySelector('.scrollTop');
+                scroll.classList.toggle("active", window.scrollY > 500)
+            })
+    
+            function scrollToTop(){
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            }
+        </script>
+
+        <!-- -------------------- Scroll Bar ---------------------------------->
+
+        <script type="text/javascript">
+            let progress = document.getElementById('progressBar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+
+        <!-- --------------------- Audio Buttom Play & Pause ---------------- -->
+
+        <script src="JS Proyect/audioButtomPlay&Pause.js"></script>
+
+        <!-- -------------------- Full Screen mode ------------------ -->
+
+        <script>
+            function getFullscreenElement(){
+                return document.fullscreenElement
+                || document.webkitFullscreenElement
+                || document.mozFullscreenElement
+                || document.msFullscreenElement;
+            }
+
+            function toggleFullscreen(){
+                if(getFullscreenElement()){
+                    document.exitFullscreen();
+                }else{
+                    document.documentElement.requestFullscreen().catch(console.log); 
+                    // document.getElementById("#").requestFullscreen().catch(console.log); //para que se active clickeando en un solo elemento
+                }
+            }
+
+            document.addEventListener("dblclick", () => {
+                toggleFullscreen();
+            });
+
+            document.addEventListener("fullscreenchange", () => {
+                console.log("full screen changed");
+            });
+        </script>
+        
+    </body>
+
+</html>

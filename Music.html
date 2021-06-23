@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- <link rel="stylesheet" href="Bootstrap-5.0.0-Home/css/bootstrap.min.css"> --> 
+        <link rel="stylesheet" href="CSS Proyect/Music.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/Extras/BrawlStars-Icon_3.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>Brawl Stars Music</title>
+
+    </head>    
+
+    <body>
+
+        <!----------------------- Scroll To Top Button --------------------------->
+
+        <div class="scrollTop" onclick="scrollToTop();"></div>
+
+        <!----------------------- Scroll Bar ------------------------------------->
+
+        <div id="progressBar"></div>
+        <div id="scrollPath"></div>
+
+        <div class="wrapper">
+            <div class="container">
+                <header>
+                    <h1>Brawl Stars PlayList</h1>
+                    <p>Muy buenas brawlfan! Soy el administrador Royal, y aquí te traigo la mejor biblioteca de música de Brawl Stars que jamás habías visto! Prueba a escuchar alguna canción, y si te gusta mucho puedes descargarla.</p>
+                    <nav>
+                        <ul class="left">
+                            <li><a href="#">Recently added</a></li>
+                            <li><a href="#">Top pop</a></li>
+                            <li><a href="#">Best of the year</a></li>
+                            <li><a href="#">Highly recommand</a></li>
+                        </ul>
+                        <ul class="right">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Request</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class="autoplay_btn"><a href="#">
+                                <label>
+                                    <h5>AUTOPLAY</h5>
+                                    <input type="checkbox">
+                                    <span></span>
+                                </label>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="body_content">
+                    <div class="title">
+                        <span></span>
+                        <span>TITLE</span>
+                        <span>ARTIST</span>
+                        <span>GENRE</span>
+                        <span>DURATION</span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="popper/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+        <!-- <script src="Bootstrap-5.0.0-Home/js/bootstrap.min.js"></script> -->
+
+        <script src="JS Proyect/Data.js"></script>
+        <script src="JS Proyect/Music.js"></script>
+
+        <!---------------------- Scroll To Top Button ------------------------>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){ //para definir la altura a la que quiero que aparezca el botón
+                var scroll = document.querySelector('.scrollTop');
+                scroll.classList.toggle("active", window.scrollY > 500)
+            });
+
+            function scrollToTop(){
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+        <!-- -------------------- Scroll Bar ---------------------------------->
+
+        <script type="text/javascript">
+            let progress = document.getElementById('progressBar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+
+        <!-- -------------------- Full Screen mode ------------------ -->
+        <script>
+            function getFullscreenElement(){
+                return document.fullscreenElement
+                || document.webkitFullscreenElement
+                || document.mozFullscreenElement
+                || document.msFullscreenElement;
+            }
+
+            function toggleFullscreen(){
+                if(getFullscreenElement()){
+                    document.exitFullscreen();
+                }else{
+                    document.documentElement.requestFullscreen().catch(console.log); 
+                    // document.getElementById("#").requestFullscreen().catch(console.log); //para que se active clickeando en un solo elemento
+                }
+            }
+
+            document.addEventListener("dblclick", () => {
+                toggleFullscreen();
+            });
+
+            document.addEventListener("fullscreenchange", () => {
+                console.log("full screen changed");
+            });
+            
+        </script>
+    
+    </body>
+
+</html>

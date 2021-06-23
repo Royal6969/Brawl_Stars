@@ -1,0 +1,731 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #24252A; */
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/Backgrounds/Background-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    cursor: url('../images/Extras/cursor/BrawlStars.cur'), auto;
+}
+
+body.night{
+    background: #00151f;
+    transition: 0.5s;
+}
+
+body.night h1, 
+body.night h2,
+body.night h3,
+body.night h4,
+body.night p{
+    color: #fff;
+}
+
+a{
+    cursor: url('../images/Extras/cursor/BrawlStarsTaraLink.cur'), auto;
+}
+
+/* --------------- Day/Night Toggle Button ------------------------ */
+
+.toggle{
+    position: absolute;
+    top: 55px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 25px; /* Ajustar */
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggle.active{
+    background: #00151f;
+    border: 2px solid #fff;
+}
+
+.toggle:before{
+    content: '';
+    position: absolute;
+    top: 1.5px; /* Ajustar */
+    left: 2.5px; /* Ajustar */
+    width: 18px;
+    height: 18px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before{
+    left: 20px;
+    background: #fff;
+}
+
+/* ------------------- Scroll To Top Button ------------------ */
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff url('../images/Extras/up.png');
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; /* para la velocidad con que termina de aparecer por completo el botón (velicidad de fade) */
+}
+
+.scrollTop.active{
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+}
+
+/* ------------------ Scroll Bar ---------------- */
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progessBar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progessBar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+/* ------------------ NavBAr -------------------- */
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* color: #edf0f1; */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    /* background-image: url('../images/Backgrounds/Background-1.jpg'); */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+header img{
+    width: 45px; 
+    height: 67px; 
+}
+
+.NavLinks{
+    padding-top: 18px;
+    list-style: none;
+    width: 100%;  /*OJO*/
+}
+
+.NavLinks li{
+    display: inline-block;
+    padding: 0px 10px;
+    margin-left: 15px; /* */
+}
+
+.NavLinks li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding-left: 14%;
+}
+
+.NavLinks li a:hover{
+    color: #0088a9;
+}
+
+/* button{ 
+    padding: 9px 25px;
+    color: white;
+    background-color: rgb(255, 152, 34);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(7, 201, 0, 0.8);
+}*/
+
+/* ---------------- Botones chulos del navbar ----------- */
+
+.btn1{
+    width: 130%;
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    /* padding: 8px 30px; */
+    /* margin: 30px 0; */
+    border-radius: 15px;
+    transition: background 0.5s;
+}
+
+.btn1:hover{
+    background: #563434;
+}
+
+/* ---------------- Boton GUAI LOGIN navbar ------------- */
+
+.container1{
+    width: 20%;
+    /* padding-right: 100%; */
+    /* padding-left: 500px;   */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.container1 .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+}
+
+.container1 .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+.container1 .btn:hover a{
+    letter-spacing: 3px;
+}
+
+.container1 .btn a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), 
+    transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+.container1 .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+
+.container1 .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.container1 .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.container1 .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.container1 .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+
+.container1 .btn:nth-child(1)::before, 
+.container1 .btn:nth-child(1)::after{
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71,
+    0 0 15px #ff1f71,
+    0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
+
+.container1 .btn:nth-child(2)::before, 
+.container1 .btn:nth-child(2)::after{
+    background: #2bd2ff;
+    box-shadow: 0 0 5px #2bd2ff,
+    0 0 15px #2bd2ff,
+    0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff;
+}
+
+.container1 .btn:nth-child(3)::before, 
+.container1 .btn:nth-child(3)::after{
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+/* -------------- Cookie Consent Box ------------ */
+.wrapper{
+    /* position: absolute; */
+    position: fixed; /* para anclarlo */
+    bottom: 30px;
+    left: 30px;
+    /* background: #fff; */
+    background: #eafffd;
+    max-width: 365px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px 25px 30px 25px;
+    z-index: 3;
+}
+
+.wrapper.hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.wrapper .img{
+    max-width: 90px;
+}
+
+.wrapper .content{
+    margin-top: 10px;
+}
+
+.content .header1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content .p{
+    color: #858585;
+    margin: 5px 0 20px 0;
+}
+
+.content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .item{
+    margin: 0 10px;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    background: #FCBA7F;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons a{
+    color: #FCBA7F;
+}
+
+/* -------------- Animación de títulos -------------- */
+
+.container-h {
+    position: relative;
+    font-weight: 300;
+    color: #000;
+}
+
+.container-h .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+}
+
+.container-h .letters {
+    display: inline-block;
+    opacity: 0;
+}
+
+/* ------------------ Secciones ----------------- */
+
+section{
+    padding: 20px;
+    display: flex;  
+    flex-direction: column; 
+    text-align: justify;
+    height: 75vh;
+    justify-content: center;  
+    align-items: center;  
+    color: white;
+    position: relative; 
+}
+
+h1, h2, h3, h4, p{
+    margin-bottom: 20px;
+    color: #00151f;
+}
+
+iframe{
+    z-index: 1;
+}
+
+section:nth-of-type(1){
+    /* background-image: url(../images/Backgrounds/Background-1.jpg); */
+    background-position: center;
+}
+
+section:nth-of-type(2){
+    /* background-image: url(../images/Backgrounds/Background-2.jpg); */
+    background-position: center;
+}
+
+section:nth-of-type(3){
+    /* background-image: url(../images/Backgrounds/Background-3.jpg); */
+    background-position: center;
+}
+
+hr{
+    border: none;
+    background: #b5b5b5;
+    height: 3px;
+    margin: 20px 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section:nth-of-type(1):after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section:nth-of-type(2):after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section:nth-of-type(3):after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------ Botón Snake Border ------------ */
+.a{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    color: #ffd900;
+    background: #00151f;
+    padding: 10px 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.a:hover{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.a:before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.05);  
+}
+
+.a span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #ffd900);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1 {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.a span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #ffd900);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2 {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.a span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b, #ffd900);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.a span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #ffd900);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4 {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.container2{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 25px;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+ul li a{
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
